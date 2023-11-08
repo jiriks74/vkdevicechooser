@@ -13,8 +13,8 @@ endif
 if not cpp.has_header('vulkan/vk_layer.h')
     error('Vulkan development files not present (vulkan/vk_layer.h)')
 endif
-if not cpp.has_header('vulkan/vk_layer_dispatch_table.h')
-    error('Vulkan development files not present (vulkan/vk_layer_dispatch_table.h)')
+if not cpp.has_header('vulkan/utility/vk_dispatch_table.h')
+    error('vulkan/utility/vk_dispatch_table.h')
 endif
 
 libdir = get_option('libdir')
